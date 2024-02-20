@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: radial-gradient(circle, #fffafc, #f1f1f1)
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.containerApp {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 8px -6px 48px 35px rgba(104, 104, 104, 0.26);
+  -webkit-box-shadow: 8px -6px 48px 35px rgba(104, 104, 104, 0.26);
+  -moz-box-shadow: 8px -6px 48px 35px rgba(104, 104, 104, 0.26);
+  width: 30%;
+  animation: appear 1.5s ease-in-out both;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.containerApp p,
+.containerApp h1 {
+  text-align: center;
+}
+
+input {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  font-size: 19px;
+}
+
+.submit {
+  border: 1px solid #000;
+  color: #2b2b2b;
+  background-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  transition: transform 200ms ease-in-out;
+  margin: auto;
+}
+
+.submit:hover {
+  transform: scale(1.05);
+}
+
+.submit+button {
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  transition: transform 200ms ease-in-out;
+  margin: auto;
+
+}
+
+.submit+button:hover {
+  transform: scale(1.05);
+}
+
+.error {
+  border: 1px solid crimson;
+  background-color: rgba(255, 0, 0, 0.274);
+}
+
+.containerApp img {
+  width: 100px;
+  object-fit: cover;
+  align-self: center;
+}
+
+.containerApp form>p {
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.bim {
+  font-size: 20px;
+}
+
+@media screen and (max-width:900px) {
+  .containerApp {
+    width: auto;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+}
